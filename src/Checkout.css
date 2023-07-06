@@ -3,6 +3,7 @@
     display: flex;
     padding: 20px;
     height: max-content;
+    justify-content:space-between
 }
 
 .checkout_add{

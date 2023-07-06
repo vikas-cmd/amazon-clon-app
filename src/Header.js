@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
 
 
 const Header = () => {
+    const [{basket},dispatch]=useStateValue();
+    
+    
+
     return <>
     
     <div className='header'>
@@ -21,11 +26,14 @@ const Header = () => {
            
         </div>
         <div className='header_nav'>
+        <Link to='/Signin'>
             <div className='header_option'>
                 <span className='header_optionLineOne'>Hello Guest</span>
+                
                 <span className='header_optionLineTwo'>Sign In</span>
 
             </div>
+            </Link>
             <div className='header_option'>
                 <span className='header_optionLineOne'>Return</span>
                 <span className='header_optionLineTwo'>& Order</span>
@@ -37,7 +45,7 @@ const Header = () => {
             </div>
             <Link to='/checkout' >
             <div className='header_optionBasket'>
-            <span className='header_optionBasketCount'>0</span>
+            <span className='header_optionBasketCount'>{basket.length}</span>
                 <AiOutlineShoppingCart className='header_optionBasketIcon'/>
                     
                 

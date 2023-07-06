@@ -10,8 +10,9 @@ const Home = () => {
             src='https://m.media-amazon.com/images/I/81cP1IAxf-L._SX3000_.jpg' alt=''/>
             <div className='home_row'>
                 <Product 
-                    title={'The lean                                                  startuphghfh '} 
-                    price={20.99}
+                id={10023}
+                    title={'The lean startuphghfh '} 
+                    price={20}
                     image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
                     rating={3}
                 />
@@ -19,8 +20,9 @@ const Home = () => {
                 
 
                 <Product 
+                id={10024}
                 title={'The lean startuphghfh '} 
-                price={100.99}
+                price={100}
                 image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
                 rating={3}
                 />
@@ -29,20 +31,23 @@ const Home = () => {
             </div>
             <div className='home_row'>
                 <Product 
+                id={10025} 
                 title={'The lean startuphghfh '} 
-                price={40.99}
+                price={40}
                 image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
                 rating={3}
                 />
                 <Product 
+                id={10026}
                 title={'The lean startuphghfh '} 
-                price={200.99}
+                price={200}
                 image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
                 rating={5}
                 />
                 <Product 
+                id={10027}
                 title={'The lean startuphghfh '} 
-                price={120.99}
+                price={120}
                 image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
                 rating={3}
                 />

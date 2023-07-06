@@ -4,6 +4,7 @@ import Home from "./Home";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 import Checkout from "./Checkout";
+import Signin from "./Signin";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
 
           </Route>
           <Route path="/" element={<Home/>}>
+
+          </Route>
+          <Route path='/signIn' element={<Signin />}>
 
           </Route>
 
