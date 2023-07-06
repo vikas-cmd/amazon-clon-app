@@ -5,8 +5,16 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 import Checkout from "./Checkout";
 import Signin from "./Signin";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(()=>{
+
+      // will only run once when he app component loads...
+
+  })
+
+
   return (
     <>
     
@@ -14,6 +22,7 @@ function App() {
       <BrowserRouter>
       <div className="app">
         <Header/>
+        <Home/>
         <Routes>
         
           
