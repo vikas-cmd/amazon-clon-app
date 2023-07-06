@@ -22,7 +22,6 @@ function App() {
       <BrowserRouter>
       <div className="app">
         <Header/>
-        
         <Routes>
         
           
@@ -40,6 +39,7 @@ function App() {
         
       
         </Routes>
+        <Home/>
 
       </div>
       
