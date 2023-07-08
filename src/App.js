@@ -8,30 +8,36 @@ import Signin from "./Signin";
 import { useEffect } from "react";
 
 function App() {
+  
+   
+  
+  
+
   useEffect(()=>{
 
-      // will only run once when he app component loads...
-
+   
   })
 
 
   return (
     <>
     
+    
    
-      <BrowserRouter>
+      <BrowserRouter basename="/amazon-clon-app">
       <div className="app">
-        <Header/>
+      <Header/>
         <Routes>
         
-          
+        <Route path="/" element={<Home/>}>
+            
+
+            </Route>
           
           <Route path="/checkout" element={<Checkout/>}>
 
           </Route>
-          <Route path="/" element={<Home/>}>
-
-          </Route>
+          
           <Route path='/signIn' element={<Signin />}>
 
           </Route>
@@ -39,12 +45,13 @@ function App() {
         
       
         </Routes>
-        <Home/>
+      
 
       </div>
       
     
     </BrowserRouter>
+    <Home/>
     
     </>
     
