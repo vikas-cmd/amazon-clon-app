@@ -25,14 +25,14 @@ function App() {
         
         <Routes>
         
-          
-          
-          <Route path="/checkout" element={<Checkout/>}>
-
-          </Route>
+               </Route>
           <Route path="/" element={<Home/>}>
 
           </Route>
+          
+          <Route path="/checkout" element={<Checkout/>}>
+
+     
           <Route path='/signIn' element={<Signin />}>
 
           </Route>
