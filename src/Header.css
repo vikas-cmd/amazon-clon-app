@@ -28,7 +28,15 @@
     align-items: center;
     
     border-radius: 24px;
+    >select {
+        height: 33px;
+        width: 13%;
+        border: none;
+        
+
+    }
 }
+
 .header_searchInput{
     height: 12px;
     width: 100%;

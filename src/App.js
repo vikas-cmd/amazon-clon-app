@@ -6,6 +6,8 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Signin from "./Signin";
 import { useEffect } from "react";
+import Footer from "./Footer";
+import Footer1 from "./Footer1";
 
 function App() {
   
@@ -45,6 +47,9 @@ function App() {
         
       
         </Routes>
+      
+      <Footer1 />
+      
       
 
       </div>

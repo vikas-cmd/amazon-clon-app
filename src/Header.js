@@ -7,7 +7,21 @@ import { useStateValue } from './StateProvider';
 
 
 const Header = () => {
+    const categories = [
+        'All',
+        'Electronics',
+        'Books',
+        'Clothing',
+        'Home & Kitchen',
+        'Toys',
+        // Add more categories here
+      ];
     const [{basket},dispatch]=useStateValue();
+    const [selectedCategory, setSelectedCategory] = useState('All');
+
+const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
     
     
 
@@ -21,7 +35,16 @@ const Header = () => {
         
 
         <div className='header_search'>
-            <input className='header_searchInput' type='text' />
+        <select value={selectedCategory} onChange={handleCategoryChange}>
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+
+            <input  className='header_searchInput' type='text' />
+            
             <BsSearch className='header_searchIcon'/>
            
         </div>
