@@ -29,8 +29,9 @@ const Home = () => {
                                 title={data.title}
                                 price={data.price}
                                 image={data.image}
-                                rating={data.rating}
+                                rating={Math.floor(data.rating.rate)}
                             />
+                            {console.log(Math.floor(data.rating.rate))}
                         </div>
 
                     ))}
