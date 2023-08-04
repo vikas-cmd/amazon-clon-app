@@ -24,7 +24,7 @@ const Home = () => {
                 <div className='home_row1'>
                     {data.map((data) => (
                         <div className='product_container'>
-                            <Product 
+                            <Product
                                 id={data.id}
                                 title={data.title}
                                 price={data.price}
@@ -39,34 +39,13 @@ const Home = () => {
 
 
 
-                </div>
-                <div className='home_row'>
-                    <Product
-                        id={10025}
-                        title={'The lean startuphghfh '}
-                        price={40}
-                        image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-                        rating={3}
-                    />
-                    <Product
-                        id={10026}
-                        title={'The lean startuphghfh '}
-                        price={200}
-                        image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-                        rating={5}
-                    />
-                    <Product
-                        id={10027}
-                        title={'The lean startuphghfh '}
-                        price={120}
-                        image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-                        rating={3}
-                    />
-                </div>
-                <div className='home_row'></div>
-            </div>
+                
 
+            </div>
+            <div className='home_row'></div>
         </div>
+
+    </div >
 
 
     </>;
